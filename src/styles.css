@@ -2,7 +2,11 @@
    text-align: center; 
 }
 
-.header{
+body, html{
+    margin: 0;
+}
+
+.header, .footer{
     background-color: #ffde73;
     display: flex;
     align-items: center;
@@ -14,13 +18,26 @@
     background-color: #ffde73;
     padding: 15px;
     border-bottom: none;
-    border-radius: 4px;
+    cursor: pointer;
+}
+
+ button:hover{
+    background-color: #eca43b;
 }
 
 .home{
+    display: block;
+}
+
+.menu{
+    display: none;
+}
+
+.home, .menu{
     background-image: url(643.png);
     background-size: cover;
     min-height: 100vh;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -34,6 +51,7 @@
     align-items: center;
     gap: 15px;
     flex-direction: column;
+    border-radius: 8px;
 }
 
 .homebox{
